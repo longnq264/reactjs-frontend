@@ -1,0 +1,22 @@
+.header-top {
+    height: 28px;
+    color: white;
+    box-sizing: border-box;
+    line-height: 28px;
+    font-family: Roboto;
+    font-size: 11px;
+    background: #2B2E34;
+    text-align: center;
+}
+.header-bottom {
+    height: 63px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+@media (min-width: 1124px){
+    .header-bottom {
+        margin: 0 auto;
+        max-width: 1440px;
+    }
+}

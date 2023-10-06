@@ -5,11 +5,11 @@ import Footer from "../Footer/Footer";
 const LayoutWebsite = () => {
   return (
     <div className='container'>
+      <div className="wrapper">
         <Header/>
-        <div id="main">
-            <Outlet/>
-        </div>
+        <Outlet/>
         <Footer/>
+      </div>
     </div>
   )
 }
