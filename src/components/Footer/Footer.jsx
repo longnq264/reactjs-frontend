@@ -2,15 +2,15 @@ import StanDard from '../../assets/img/standard.jpg';
 import BgFooter from '../../assets/img/women_dt.png';
 import BgFooterMobile from '../../assets/img/bg-mobile.png'
 import BgFooterIPad from '../../assets/img/banner-ft.jpg'   
-// import { useEffect } from 'react';
-import {useState} from 'react';
+import FooterListItem from './FooterListItem';
 const Footer = () => {
-  const [clicked, setClicked] = useState(false);
 
-  const handleClick = () => {
-    setClicked(!clicked)
+  const listData = {
+    Mondo: ["Gift card", "More color more me", "Negozi", "Tecnologia", "Storia", "Sport", "Made in Italy"],
+    Assistenza: ["FAQ", "Guida alle taglie", "Composizione e lavaggio", "I colori Focenza"],
+    Informazioni: ["Contattaci","Spedizioni e Resi", "Condizioni di vendita","Privacy", "Cookie"]
   }
-  // const setDisplay = setState() ? {display: 'block'} : {display: 'none'};
+  // console.log(listData);
   return (
     <footer className="footer-layout">
       <div className='footer-main'>
@@ -411,96 +411,10 @@ const Footer = () => {
               </ul>
             </div>
             <div className="list-payment flex">
-              <div className="list-title">
-                <div className="list-title-mobile">
-                  <h2>Mondo Focenza </h2>
-                    <button className="icon" 
-                      onClick={handleClick}
-                    >
-                      <span className="material-symbols-outlined">expand_more</span>
-                    </button>
-                </div>
-                {/* btn */}
-                <ul
-                  className={`btn-menu list-col-first`}
-                  style={{display: clicked ? 'block' : 'none'}}  
-                >
-                  <li>
-                    <a href="#">Gift card</a>
-                  </li>
-                  <li>
-                    <a href="#">More color more me</a>
-                  </li>
-                  <li>
-                    <a href="#">Negozi</a>
-                  </li>
-                  <li>
-                    <a href="#">Tecnologia</a>
-                  </li>
-                  <li>
-                    <a href="#">Storia</a>
-                  </li>
-                  <li>
-                    <a href="#">Sport</a>
-                  </li>
-                  <li>
-                    <a href="#">Made in Italy</a>
-                  </li>
-                </ul>
-              </div>
-              <div className="list-title">
-                <div className="list-title-mobile">
-                  <h2>Assistenza</h2>
-                  <a  
-                    // href="javascript:void(0);"
-                    className="icon"
-                  >
-                    <span className="material-symbols-outlined">expand_more</span>
-                  </a>
-                </div>
-                <ul style={{display: clicked ? 'block' : 'none'}} className="btn-menu list-col-second">
-                  <li>
-                    <a href="#">FAQ</a>
-                  </li>
-                  <li>
-                    <a href="#">Guida alle taglie</a>
-                  </li>
-                  <li>
-                    <a href="#">Composizione e lavaggio</a>
-                  </li>
-                  <li>
-                    <a href="#">I colori Focenza</a>
-                  </li>
-                </ul>
-              </div>
-              <div className="list-title">
-                <div className="list-title-mobile">
-                  <h2>Informazioni</h2>
-                  <a
-                    // href="javascript:void(0);"
-                    className="icon"
-                  >
-                    <span className="material-symbols-outlined">expand_more</span>
-                  </a>
-                </div>
-                <ul style={{display: clicked ? 'block' : 'none'}}   className="btn-menu list-col-third">
-                  <li>
-                    <a href="#">Contattaci</a>
-                  </li>
-                  <li>
-                    <a href="#">Spedizioni e Resi</a>
-                  </li>
-                  <li>
-                    <a href="#">Condizioni di vendita</a>
-                  </li>
-                  <li>
-                    <a href="#">Privacy</a>
-                  </li>
-                  <li>
-                    <a href="#">Cookie</a>
-                  </li>
-                </ul>
-              </div>
+              {/* Component */}
+              <FooterListItem title= "Mondo Focenza" items={listData.Mondo}/>
+              <FooterListItem title= "Assistenza" items={listData.Assistenza}/>
+              <FooterListItem title= "Informazioni" items={listData.Informazioni}/>
             </div>
             <div className="footer-content-bottom flex between">
               <div className="copyright">

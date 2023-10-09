@@ -1,8 +1,14 @@
 // import React from 'react'
+import { useState } from "react";
 import logo from "../../assets/img/logo.png";
 import { Link } from "react-router-dom";
 const Header = () => {
-    // const nav = useNavigate();
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+      setIsMenuOpen(!isMenuOpen);
+    };
+  
     return (
         <header className="layout">
             <div className="header_top">
@@ -16,7 +22,9 @@ const Header = () => {
                 <div className="header-bottom-content">
                     <section className="flex-col-1 flex">
                         <div className="logo relative">
-                            <div className="hamburger-button"></div>
+                            <div onClick={toggleMenu} className="hamburger-button">
+                                <i className="fa fa-bars fa-1" aria-hidden="true"></i>
+                            </div>
                             <div className="logo-home">
                                 <Link to={"/"}>
                                     {" "}
@@ -68,13 +76,13 @@ const Header = () => {
             <div className="nav-bar-menu-mb">
                 <ul className="menu-mb">
                     <li>
-                        <a href="#">DONNA</a>
+                        <Link to={'/donna'}>DONNA</Link>
                     </li>
                     <li>
-                        <a href="#">UOMO</a>
+                        <Link to={'/uomo'}>UOMO</Link>
                     </li>
                     <li>
-                        <a href="#">BAMBINI</a>
+                        <Link to={'/bambini'}>BAMBINI</Link>
                     </li>
                 </ul>
             </div>

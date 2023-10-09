@@ -6,7 +6,7 @@ export const getAll = () => {
 }
 
 export const getID = (id) => {
-    const url = `/categories/${id}`
+    const url = `/category/${id}`
     return instance.get(url)
 }
 

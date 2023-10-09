@@ -379,6 +379,9 @@ ul.menu-mb li:hover {
 .hamburger-button {
     display: none;
 }
+.list-title-mobile {
+    height: 42px;
+}
 .list-title .list-title-mobile h2 {
     color: #2B2E34;
     font-family: Roboto;
@@ -446,9 +449,6 @@ li.search-icon {
 .slider-donna img{
     width: 100%;
 }
-.wrap-categories { 
-
-}
 .categories h2 {
     color: #2B2E34;
     text-align: center;
@@ -486,8 +486,37 @@ button.icon {
     border: none;
     background: transparent;
 }
+.layuot-hamburger {
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.box-categories img {
+    border-radius: 15px;
+}
+.product-box {
+    width: 25%;
+}
+.layout-product-detail {
+    width: 100%;
+}
+/* Button chatGPT */ 
+.slide-in-menu {
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: -300px; /* Bắt đầu menu ẩn bên ngoài khung hình */
+    background-color: #fff;
+    transition: right 0.3s ease; /* Thời gian và kiểu hiệu ứng trượt */
+  }
+  
+  .slide-in-menu.open {
+    right: 0; /* Hiện menu khi mở */
+  }
 @media (max-width: 767px) {
-
     .wrapper {
         padding-top: 123px;
     }
@@ -564,6 +593,9 @@ button.icon {
         display: inherit;
     }
     .hamburger-button {
+        width: 100%;
+        box-sizing: border-box;
+        height: 20px;
         display: block;
         margin-right: 11.5px;
     }
@@ -605,10 +637,11 @@ button.icon {
     .header-bottom {
         height: 56px;
     }
-    .hamburger-button a.span {
-        display: block;
+    .hamburger-button i{
         height: 20px;
         width: 20px;
+        font-size: 20px;
+        color: #2B2E34;
         box-sizing: border-box;
     }
     .img-ft {
@@ -633,6 +666,10 @@ button.icon {
     }
     .grid-layout {
         flex-wrap: wrap;
+    }
+    .list-payment {
+        margin-top: 10px;
+        border-top: 1px solid #E8E8E8;
     }
 }
 @media (min-width: 768px) and (max-width: 1123px) {
@@ -690,6 +727,9 @@ button.icon {
         padding-top: 35px;
         padding-bottom: 30px;
     }
+    .list-title .btn-menu {
+        display: block !important;
+    }
 }
 @media (min-width: 1124px){
     .layout-web {
@@ -728,7 +768,8 @@ button.icon {
         display: none;
     }
     .list-title .list-title-mobile h2 {
-        font-weight: 400;
+        height: 42px;
+        font-weight: 700;
     }
     .icon-bar .search-icon {
         display: none;
@@ -738,6 +779,6 @@ button.icon {
         padding-bottom: 30px;
     }
     .list-title .btn-menu {
-        display: block;
+        display: block !important;
     }
 }
