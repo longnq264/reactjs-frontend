@@ -2,11 +2,19 @@
     padding: 0;
     margin: 0;
 }
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Montserrat';
 }
 p {
     font-family: 'Roboto';
+}
+img {
+    width: 100%;
 }
 li {
     list-style: none;
@@ -33,7 +41,7 @@ header.layout {
     line-height: 28px;
     font-family: Roboto;
     font-size: 11px;
-    background: #2B2E34;
+    background: #2b2e34;
     text-align: center;
 }
 .header_top span {
@@ -45,7 +53,7 @@ header.layout {
     box-sizing: border-box;
 }
 .flex-col-1 {
-    float: left
+    float: left;
 }
 .flex-col-2 {
     float: right;
@@ -53,7 +61,7 @@ header.layout {
 .logo {
     padding-top: 18px;
 }
-.logo a.absolute{
+.logo a.absolute {
     right: 0;
     top: 32px;
 }
@@ -66,7 +74,7 @@ header.layout {
     display: block;
     width: 70px;
     font-family: 'Roboto', sans-serif;
-    color: #2B2E34;
+    color: #2b2e34;
     font-size: 14px;
     letter-spacing: 0.3px;
     text-transform: uppercase;
@@ -74,9 +82,9 @@ header.layout {
     font-weight: 400;
 }
 .nav-bar a:focus {
-    border-bottom: 2px solid #EA006F;
+    border-bottom: 2px solid #ea006f;
 }
-.nav-bar ul li{
+.nav-bar ul li {
     display: inline-block;
     width: 70px;
     padding-right: 35px;
@@ -92,7 +100,7 @@ ul.menu-mb li {
 }
 ul.menu-mb li a {
     text-decoration: none;
-    color: #2B2E34;
+    color: #2b2e34;
     font-family: 'Roboto';
     font-size: 14px;
     font-style: normal;
@@ -106,17 +114,17 @@ ul.menu-mb li a {
     border-top: 2px solid #ebebeb;
     height: 33px;
     box-sizing: border-box;
-    background: #FFF;
+    background: #fff;
 }
 .search-bar {
     margin-top: 12px;
 }
-.search-bar input[type=search]{
+.search-bar input[type='search'] {
     width: 359px;
     height: 40px;
     border: none;
     border-radius: 15px;
-    background: #F8F7F7;
+    background: #f8f7f7;
     padding: 0px 17px 0 18px;
     outline: none;
 }
@@ -132,7 +140,7 @@ ul.menu-mb li a {
     margin-top: 21px;
 }
 .icon-bar ul li a {
-    color: #2B2E34;
+    color: #2b2e34;
 }
 .icon-bar ul li a i {
     height: 20px;
@@ -158,19 +166,19 @@ ul.menu-mb li a {
     width: 100%;
     position: absolute;
     bottom: 33px;
-    color: #FFF;
+    color: #fff;
     text-align: center;
     font-style: normal;
     line-height: normal;
 }
 .box-content h1 {
-    color: #FFF;
+    color: #fff;
     font-size: 30px;
     font-weight: 700;
     font-family: 'Montserrat', sans-serif;
 }
 .box-content a {
-    color: #FFF;
+    color: #fff;
     font-size: 15px;
     font-family: 'Roboto';
 }
@@ -179,18 +187,18 @@ ul.menu-mb li a {
     width: 100%;
     height: 100%;
     bottom: 0;
-    background: linear-gradient(180deg,rgba(43, 46, 52, 0.00) 40%,#2B2E34 100%);
+    background: linear-gradient(180deg, rgba(43, 46, 52, 0) 40%, #2b2e34 100%);
 }
 .introduce {
     padding-bottom: 37px;
 }
 .overview-content {
-    color: #2B2E34;
+    color: #2b2e34;
     text-align: center;
-    padding: 26px 0 50px 0 ;
+    padding: 26px 0 50px 0;
 }
 .overview-content .title {
-    font-family: 'Montserrat';    
+    font-family: 'Montserrat';
 }
 h1.title {
     font-size: 30px;
@@ -204,8 +212,8 @@ h3.title {
     line-height: 26px;
     margin-bottom: 10px;
 }
-.overview-content a{
-    color: #2B2E34;
+.overview-content a {
+    color: #2b2e34;
     text-align: center;
     font-family: Roboto;
     font-size: 14px;
@@ -235,7 +243,7 @@ h3.title {
     text-align: end;
 }
 .title-banner h1 {
-    color: #2B2E34;
+    color: #2b2e34;
     font-size: 25px;
     font-weight: 600;
     line-height: 28px;
@@ -245,12 +253,12 @@ h3.title {
     letter-spacing: 0.6px;
 }
 .title-banner span {
-    color: #EA006F;
+    color: #ea006f;
     font-family: 'Roboto';
     font-weight: 700;
 }
 .title-banner p {
-    color: #2B2E34;
+    color: #2b2e34;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -258,12 +266,21 @@ h3.title {
     letter-spacing: 0.3px;
     margin: 10px 0 14px 0;
 }
-.title-banner button {
+.categories {
+    width: 100%;
+}
+.layout-newProduct {
+    margin: 0 -7px;
+}
+.product-item img {
+    border-radius: 20px;
+}
+button.button-layout{
     width: 146px;
     height: 42px;
     border: none;
-    background-color: #2B2E34;
-    color: #FFF;
+    background-color: #2b2e34;
+    color: #fff;
     border-radius: 15px;
     text-transform: uppercase;
     font-size: 14px;
@@ -272,12 +289,11 @@ h3.title {
     cursor: pointer;
 }
 .footer_layout {
-    background: #F8F7F7;
+    background: #f8f7f7;
     overflow: hidden;
 }
-.payment-icon ul li{
+.payment-icon ul li {
     display: inline-block;
-
 }
 p.title-footer {
     font-size: 14px;
@@ -288,10 +304,10 @@ p.title-footer {
     text-transform: uppercase;
     padding-bottom: 5px;
 }
-ul.icon li{
+ul.icon li {
     height: 42px;
     width: 85px;
-    padding-right:6px;
+    padding-right: 6px;
 }
 li.list-title {
     font-size: 14px;
@@ -309,7 +325,7 @@ li.list-title {
 }
 .list-payment ul li a {
     text-decoration: none;
-    color: #2B2E34;
+    color: #2b2e34;
     font-family: 'Roboto';
     font-size: 14px;
     font-style: normal;
@@ -325,15 +341,15 @@ li.list-title {
 .copyright {
     padding-top: 80px;
 }
-.copyright p{
-    color: #2B2E34;
+.copyright p {
+    color: #2b2e34;
     font-family: Roboto;
     font-size: 11px;
     font-style: normal;
     font-weight: 400;
     line-height: 22px; /* 200% */
     letter-spacing: 0.236px;
-    }
+}
 .wrap-footer {
     margin: 0 auto;
 }
@@ -359,7 +375,7 @@ li.list-title {
     padding: 0;
 }
 ul.menu-mb li:hover {
-    border-bottom: 2px solid #EA006F;
+    border-bottom: 2px solid #ea006f;
 }
 .myButton.layout-humburger {
     position: fixed;
@@ -368,9 +384,9 @@ ul.menu-mb li:hover {
     left: 0;
     width: 100%;
     height: 1000px;
-    background: #FFF;
+    background: #fff;
 }
-.layout-web .myButton{
+.layout-web .myButton {
     display: none;
 }
 .layout-humburger {
@@ -383,7 +399,7 @@ ul.menu-mb li:hover {
     height: 42px;
 }
 .list-title .list-title-mobile h2 {
-    color: #2B2E34;
+    color: #2b2e34;
     font-family: Roboto;
     font-size: 14px;
     font-style: normal;
@@ -396,26 +412,26 @@ ul.icon li a {
     display: block;
     height: 42px;
 }
-.list-title-mobile span{
+.list-title-mobile span {
     line-height: 43px;
     display: none;
 }
 span.material-symbols-outlined {
     font-weight: 200;
-    color: #2B2E34;
+    color: #2b2e34;
 }
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
 }
 .clicked {
     position: fixed;
     top: 0;
     right: 0;
-    background-color:#F8F7F7;;
+    background-color: #f8f7f7;
 }
 .clicked a {
     display: block;
@@ -446,11 +462,11 @@ li.search-icon {
     margin-top: -9px;
     width: 100%;
 }
-.slider-donna img{
+.slider-donna img {
     width: 100%;
 }
 .categories h2 {
-    color: #2B2E34;
+    color: #2b2e34;
     text-align: center;
     font-family: Montserrat;
     font-size: 25px;
@@ -476,7 +492,7 @@ li.search-icon {
 }
 .footer-main {
     max-width: 100%;
-    background-color: #F8F7F7 ;
+    background-color: #f8f7f7;
 }
 .footer-content {
     flex: 1;
@@ -502,7 +518,18 @@ button.icon {
 .layout-product-detail {
     width: 100%;
 }
-/* Button chatGPT */ 
+.new-productDetail {
+    width: 100%;
+}
+.wrap-newProduct {
+    width: 100%;
+}
+.content-main-donna {
+    background-color: #F8F7F7;
+    border-radius: 20px;
+}
+
+/* Button chatGPT */
 .slide-in-menu {
     width: 300px;
     height: 100%;
@@ -511,11 +538,30 @@ button.icon {
     right: -300px; /* Bắt đầu menu ẩn bên ngoài khung hình */
     background-color: #fff;
     transition: right 0.3s ease; /* Thời gian và kiểu hiệu ứng trượt */
-  }
-  
-  .slide-in-menu.open {
+}
+
+.slide-in-menu.open {
     right: 0; /* Hiện menu khi mở */
-  }
+}
+.layout-newProduct h2{
+    color: #2B2E34;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.5px;
+}
+.new-productSeller {
+    margin: 0 -4px;
+}
+.productseller-item {
+    padding: 0 4px;
+}
+.productseller-item img {
+    border-radius: 10%;
+}
 @media (max-width: 767px) {
     .wrapper {
         padding-top: 123px;
@@ -538,7 +584,7 @@ button.icon {
         text-align: left;
         padding: 0 15px 43px 15px;
     }
-    .banner-footer img.desktop  {
+    .banner-footer img.desktop {
         display: none;
     }
     .banner-footer img.mobile {
@@ -602,17 +648,19 @@ button.icon {
     .logo {
         display: flex;
     }
-    .fa-navicon:before, .fa-reorder:before, .fa-bars:before {
-        content: "\f0c9";
+    .fa-navicon:before,
+    .fa-reorder:before,
+    .fa-bars:before {
+        content: '\f0c9';
         width: 20px;
         height: 20px;
     }
-    ul.btn-menu{
+    ul.btn-menu {
         display: none;
     }
     .list-title h2 {
         width: 100%;
-        color: #2B2E34;
+        color: #2b2e34;
         font-family: Roboto;
         font-size: 14px;
         font-style: normal;
@@ -623,7 +671,7 @@ button.icon {
     }
     .list-title-mobile {
         display: flex;
-        border-bottom: 1px solid #E8E8E8;
+        border-bottom: 1px solid #e8e8e8;
         height: 42px;
     }
     .list-title-mobile span {
@@ -632,16 +680,16 @@ button.icon {
     }
     .list-title-mobile a {
         text-decoration: none;
-        color: #2B2E34;
+        color: #2b2e34;
     }
     .header-bottom {
         height: 56px;
     }
-    .hamburger-button i{
+    .hamburger-button i {
         height: 20px;
         width: 20px;
         font-size: 20px;
-        color: #2B2E34;
+        color: #2b2e34;
         box-sizing: border-box;
     }
     .img-ft {
@@ -669,7 +717,7 @@ button.icon {
     }
     .list-payment {
         margin-top: 10px;
-        border-top: 1px solid #E8E8E8;
+        border-top: 1px solid #e8e8e8;
     }
 }
 @media (min-width: 768px) and (max-width: 1123px) {
@@ -694,7 +742,7 @@ button.icon {
     .banner-footer {
         width: 100%;
     }
-    .banner-footer img.desktop  {
+    .banner-footer img.desktop {
         display: none;
     }
     .banner-footer img.mobile {
@@ -731,13 +779,13 @@ button.icon {
         display: block !important;
     }
 }
-@media (min-width: 1124px){
+@media (min-width: 1124px) {
     .layout-web {
         max-width: 1440px;
         margin: 0 auto;
     }
     .wrap-footer {
-        max-width: 1440px ;
+        max-width: 1440px;
     }
     .main-content {
         padding: 0 30px;

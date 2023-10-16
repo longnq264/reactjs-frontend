@@ -1,14 +1,13 @@
 // import React from 'react'
-import { useState } from "react";
+// import { useState } from "react";
 import logo from "../../assets/img/logo.png";
 import { Link } from "react-router-dom";
+// import HamburgerButton from "./HamburgerButton";
 const Header = () => {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-    const toggleMenu = () => {
-      setIsMenuOpen(!isMenuOpen);
-    };
-  
+    // const [menuOpen, setMenuOpen] = useState(false);
+    // const toggleMenu = () => {
+    //     setMenuOpen(!menuOpen);
+    // };
     return (
         <header className="layout">
             <div className="header_top">
@@ -22,9 +21,7 @@ const Header = () => {
                 <div className="header-bottom-content">
                     <section className="flex-col-1 flex">
                         <div className="logo relative">
-                            <div onClick={toggleMenu} className="hamburger-button">
-                                <i className="fa fa-bars fa-1" aria-hidden="true"></i>
-                            </div>
+                            {/* <HamburgerButton isOpen={menuOpen} toggleMenu={toggleMenu}/> */}
                             <div className="logo-home">
                                 <Link to={"/"}>
                                     {" "}

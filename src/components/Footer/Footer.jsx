@@ -30,7 +30,7 @@ const Footer = () => {
                 Rimani aggiornato sulle nostre collezioni e ricevi le nostre
                 offerte speciali.
               </p>
-              <button>Iscriviti ora</button>
+              <button className='button-layout'>Iscriviti ora</button>
             </div>
           </div>
           <div className="footer-content">
